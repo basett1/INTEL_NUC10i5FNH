@@ -2,7 +2,7 @@
 
 EFI for Intel NUC10i5FNH with OpenCore bootloader
 
-![descrizione](./Screenshot/pc.jpg)
+![descrizione](./Screenshot/PC.jpg)
 
 ### Computer Spec:
 
