@@ -10,12 +10,12 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 | ---------------- | ---------------------------------- |
 | CPU              | Intel i5 10210U                    |
 | iGPU             | Intel® UHD Graphics                |
-| Lan              | Intel 8168                         |
+| Lan              | Intel I219V10                      |
 | Audio            | Realtek ALC256                     |
 | Ram              | 32 Gb DDR4 2666 Mhz                |
-| Wifi + Bluetooth | INTEL                              |
-| NVMe             | TOSHIBA KBG4 256 Gb                |
-| SSD              | Crucial BX500 240 Gb               |
+| Wifi + Bluetooth | INTEL Wi-Fi 6 AX201                |
+| NVMe             | SAMSUNG 970 EVO PLUS 250 GB (MACOS)|
+| SSD              | SILICON POWER 1 TB (WINDOWS)       |
 | SmBios           | MacMini 8,1                        |
 | BootLoader       | OpenCore                           |
 
