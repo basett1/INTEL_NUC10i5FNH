@@ -27,7 +27,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 
 ### What works and What doesn't or WIP:
 
-- [x] Intel UHD iGPU HDMI Output
+- [x] Intel UHD iGPU HDMI Output / Thunderbolt 3 Output Video
 - [x] ALC256 Internal Speakers
 - [x] ALC256 Native Combojack headphones
 - [x] ALC256 HDMI Audio Output
