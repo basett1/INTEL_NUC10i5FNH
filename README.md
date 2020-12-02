@@ -19,7 +19,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 | SmBios           | MacMini 8,1                        |
 | BootLoader       | OpenCore                           |
 
-![infobigsur](./Screenshot/infomacbigsur.png)
+![infobigsur](./Screenshot/infomac.png)
 
 ## Peripherals
 
@@ -27,7 +27,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 
 ### What works and What doesn't or WIP:
 
-- [x] Intel UHD 630 iGPU HDMI Output
+- [x] Intel UHD iGPU HDMI Output
 - [x] ALC256 Internal Speakers
 - [x] ALC256 Native Combojack headphones
 - [x] ALC256 HDMI Audio Output
