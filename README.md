@@ -8,10 +8,10 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
-| CPU              | Intel i5 8100T                     |
-| iGPU             | Intel® UHD Graphics 630            |
-| Lan              | Realtek 8168                       |
-| Audio            | Realtek ALC255                     |
+| CPU              | Intel i5 10210U                    |
+| iGPU             | Intel® UHD Graphics                |
+| Lan              | Intel 8168                         |
+| Audio            | Realtek ALC256                     |
 | Ram              | 32 Gb DDR4 2666 Mhz                |
 | Wifi + Bluetooth | INTEL                              |
 | NVMe             | TOSHIBA KBG4 256 Gb                |
@@ -27,30 +27,23 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 
 ### What works and What doesn't or WIP:
 
-- [x] Intel UHD 630 iGPU HDMI/DP Output
-- [x] ALC255 Internal Speakers
-- [x] ALC255 Native Combojack headphones
-- [x] ALC255 HDMI/DP Audio Output
+- [x] Intel UHD 630 iGPU HDMI Output
+- [x] ALC256 Internal Speakers
+- [x] ALC256 Native Combojack headphones
+- [x] ALC256 HDMI Audio Output
 - [x] All USB Ports 
 - [x] SpeedStep / Sleep / Wake
-- [x] Wi-Fi and Bluetooth BCM943602BAED (DW1830) Module
-- [x] Realtek RTL8168 LAN
+- [x] Wi-Fi and Bluetooth
+- [x] Intel LAN
+- [x] THUNDERBOLT 3
 - [x] NVRAM
-- [x] Windows boot from OpenCore
-- [x] ALC255 Combojack microphone
-- [x] ALC255 jack LINE-IN
+- [x] ALC256 Combojack microphone
+- [x] ALC256 jack LINE-IN
 
 
 ### Special Config:
 
 - Usb port mapping performed
-- Disabled unused device
-- Applied cosmetics DSM
-
-### Post Install:
-
-Open terminal and run install.sh from PostInsall/ComboJackAlc295. After reboot insert jack and appears this image
-![jack](./Screenshot/Combojackfix.png)
 
 ### SSDT Info
 ![ssdt](./Screenshot/ssdtscreen.png)
