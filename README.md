@@ -45,10 +45,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 
 - Usb port mapping performed
 
-### SSDT Info
-![ssdt](./Screenshot/ssdtscreen.png)
-
-See [ioreg](./ioregmacbook.ioreg) for more clarification
+See [ioreg](./NUCMacMini.ioreg) for more clarification
 
 ## Credits
 
