@@ -1,6 +1,6 @@
-# Dell Optiplex 3060 MFF Hackintosh
+# INTEL NUC10i5FNH Hackintosh
 
-EFI for Dell Optiplex 3060 MFF with OpenCore bootloader
+EFI for Intel NUC10i5FNH with OpenCore bootloader
 
 ![descrizione](./Screenshot/pc.jpg)
 
@@ -8,12 +8,12 @@ EFI for Dell Optiplex 3060 MFF with OpenCore bootloader
 
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
-| CPU              | Intel i3 8100T                     |
+| CPU              | Intel i5 8100T                     |
 | iGPU             | Intel® UHD Graphics 630            |
 | Lan              | Realtek 8168                       |
 | Audio            | Realtek ALC255                     |
-| Ram              | 16 Gb DDR4 2400 Mhz                |
-| Wifi + Bluetooth | BCM943602BAED                      |
+| Ram              | 32 Gb DDR4 2666 Mhz                |
+| Wifi + Bluetooth | INTEL                              |
 | NVMe             | TOSHIBA KBG4 256 Gb                |
 | SSD              | Crucial BX500 240 Gb               |
 | SmBios           | MacMini 8,1                        |
@@ -24,10 +24,6 @@ EFI for Dell Optiplex 3060 MFF with OpenCore bootloader
 ## Peripherals
 
 ![infohack](./Screenshot/hackintooldevice.png)
-![infodp2](./Screenshot/DpciScreen2.png)
-![infogpu](./Screenshot/hackintooligpu.png)
-![usbmap](./Screenshot/mapusb.png)
-![infopci](./Screenshot/PCISEZ.png)
 
 ### What works and What doesn't or WIP:
 
@@ -66,9 +62,6 @@ See [ioreg](./ioregmacbook.ioreg) for more clarification
 - [Apple](https://apple.com) for macOS;
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
 - [Dortania](https://github.com/dortania)
-- [mald0n](https://github.com/MaLd0n)
-- [rehabman](https://github.com/RehabMan)
-- [daliansky](https://github.com/daliansky)
 - [Hackintoshlifeit](https://github.com/Hackintoshlifeit)
 
 # If you need help please contact us on [Telegram](https://t.me/HackintoshLife_it) or [Web](https://www.hackintoshlife.it/)
