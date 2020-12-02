@@ -1,0 +1,1 @@
+# INTEL_NUC10i5FNH
