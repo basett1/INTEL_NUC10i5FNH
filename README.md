@@ -12,7 +12,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 | iGPU             | Intel® UHD Graphics                |
 | Lan              | Intel I219V10                      |
 | Audio            | Realtek ALC256                     |
-| Ram              | 32 Gb DDR4 2666 Mhz                |
+| Ram              | 16 Gb DDR4 2666 Mhz                |
 | Wifi + Bluetooth | INTEL Wi-Fi 6 AX201                |
 | NVMe             | SAMSUNG 970 EVO PLUS 250 GB (MACOS)|
 | SSD              | SILICON POWER 1 TB (WINDOWS)       |
@@ -23,7 +23,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 
 ## Peripherals
 
-![infohack](./Screenshot/hackintooldevice.png)
+![PCI DEVICES](./Screenshot/PCIDEV.png)
 
 ### What works and What doesn't or WIP:
 
