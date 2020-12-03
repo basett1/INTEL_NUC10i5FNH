@@ -31,7 +31,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 - [x] ALC256 Internal Speakers
 - [x] ALC256 Native Combojack headphones
 - [x] ALC256 HDMI Audio Output
-- [x] All USB Ports 
+- [x] All USB Ports (WIP)
 - [x] SpeedStep / Sleep / Wake
 - [x] Wi-Fi and Bluetooth
 - [x] Intel LAN
@@ -43,7 +43,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 
 ### Special Config:
 
-- Usb port mapping performed
+- Usb port mapping performed (WIP)
 
 See [ioreg](./NUCMacMini.ioreg) for more clarification
 
