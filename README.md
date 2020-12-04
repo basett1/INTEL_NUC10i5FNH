@@ -30,7 +30,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 - [x] Intel UHD iGPU HDMI Output / Thunderbolt 3 Output Video
 - [x] ALC256 Internal Speakers
 - [x] ALC256 Native Combojack headphones
-- [x] ALC256 HDMI Audio Output
+- [x] ALC256 HDMI Audio Output (*note)
 - [x] All USB Ports (WIP)
 - [x] SpeedStep / Sleep / Wake
 - [x] Wi-Fi and Bluetooth
@@ -40,6 +40,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 - [x] ALC256 Combojack microphone
 - [x] ALC256 jack LINE-IN
 
+* Audio output fix in progress for HDMI
 
 ### Special Config:
 
