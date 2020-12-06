@@ -40,7 +40,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 - [x] ALC256 Combojack microphone
 - [x] ALC256 jack LINE-IN
 
-* Audio output fix in progress for HDMI
+* Audio output for HDMI use VoodooHDA-OC
 
 ### Special Config:
 
@@ -53,6 +53,7 @@ See [ioreg](./NUCMacMini.ioreg) for more clarification
 - [Apple](https://apple.com) for macOS;
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
 - [Dortania](https://github.com/dortania)
+- [VoodooHDA] Dev VoodooHDA
 - [Hackintoshlifeit](https://github.com/Hackintoshlifeit)
 
 # If you need help please contact us on [Telegram](https://t.me/HackintoshLife_it) or [Web](https://www.hackintoshlife.it/)
