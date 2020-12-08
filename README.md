@@ -53,7 +53,7 @@ See [ioreg](./NUCMacMini.ioreg) for more clarification
 - [Apple](https://apple.com) for macOS;
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
 - [Dortania](https://github.com/dortania)
-- [VoodooHDA] Dev VoodooHDA
+- [VoodooHDA] https://sourceforge.net/p/voodoohda/code/HEAD/tree/
 - [Hackintoshlifeit](https://github.com/Hackintoshlifeit)
 
 # If you need help please contact us on [Telegram](https://t.me/HackintoshLife_it) or [Web](https://www.hackintoshlife.it/)
