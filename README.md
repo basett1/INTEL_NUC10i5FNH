@@ -1,3 +1,4 @@
+# 12/02/2021 THIS REPO IS A WORK IN PROGRESS, IN A FEW DAYS I'LL UPDATE SOME INTERESTING INFO
 # INTEL NUC10i5FNH Hackintosh
 
 EFI for Intel NUC10i5FNH with OpenCore bootloader
@@ -39,6 +40,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 - [x] NVRAM
 - [x] ALC256 Combojack microphone
 - [x] ALC256 jack LINE-IN
+- [ ] Thunderbolt (WIP)
 
 * Audio output for HDMI use VoodooHDA-OC
 
