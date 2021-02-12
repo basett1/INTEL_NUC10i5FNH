@@ -10,6 +10,10 @@
 
 </div>
 
+div class="text-white bg-blue mb-2">
+  .text-white on .bg-blue
+</div>
+
 # 12/02/2021 THIS REPO IS A WORK IN PROGRESS, IN A FEW DAYS I'LL UPDATE SOME INTERESTING INFO
 
 
