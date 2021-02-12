@@ -10,9 +10,6 @@
 
 </div>
 
-
-<div class="text-red">
-  
 # 12/02/2021 THIS REPO IS A WORK IN PROGRESS, IN A FEW DAYS I'LL UPDATE SOME INTERESTING INFO
 
 
@@ -54,7 +51,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 - [x] SpeedStep / Sleep / Wake
 - [x] Wi-Fi and Bluetooth
 - [x] Intel LAN
-- [ ] THUNDERBOLT 3
+- [ ] Thunderbolt 3
 - [x] NVRAM
 - [x] ALC256 Combojack microphone
 - [x] ALC256 jack LINE-IN
