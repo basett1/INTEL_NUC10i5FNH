@@ -11,8 +11,9 @@
 </div>
 
 
-
+<div class="text-red">
 # 12/02/2021 THIS REPO IS A WORK IN PROGRESS, IN A FEW DAYS I'LL UPDATE SOME INTERESTING INFO
+</div>
 
 
 # INTEL NUC10i5FNH Hackintosh
