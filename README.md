@@ -8,14 +8,14 @@
 [![](https://img.shields.io/badge/Instagram-HackintoshLifeIT-informational?style=flat&logo=instagram&logoColor=white&color=8a178a)](https://www.instagram.com/hackintoshlife.it_official/)
 [![](https://img.shields.io/badge/PayPal-HackintoshLifeIT-informational?style=flat&logo=paypal&logoColor=white&color=00B2EE)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RWBVVWL8H9JC2&source=url)
 
-
+</div>
 
 
 <div class="text-red">
   
 # 12/02/2021 THIS REPO IS A WORK IN PROGRESS, IN A FEW DAYS I'LL UPDATE SOME INTERESTING INFO
 
-</div>
+
 
 
 # INTEL NUC10i5FNH Hackintosh
