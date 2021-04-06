@@ -8,11 +8,75 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT Hack</string>
+				<string>Power Management</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-NUC10i5FNH.aml</string>
+				<string>SSDT-PLUG.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Embedded Controller</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC-USBX.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>System Clocks</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-AWAC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fixing Shutdown/Restart</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>FixShutdown-USB-SSDT.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IRQ Conflicts (Needs _CRS to XCRS Rename)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-HPET.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Reset USB to Mapping USB</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-USB-Reset.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SMBus support</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS-MCHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>DTPG Method (Thunderbolt SSDT)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-DTPG.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Thunderbolt 3</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-TITAN-THUNDERBOLT.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -21,13 +85,13 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Rename _STA to XSTA(H_EC)</string>
+				<string>_PTS to ZPTS (Fix FixShutdown)</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X1NUQQCk</data>
+				<data>X1BUUw==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -35,11 +99,89 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>WFNUQQCk</data>
+				<data>WlBUUw==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
-				<integer>46</integer>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HPET _CRS to XCRS Rename (IRQ Conflicts)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>JV9DUlM=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>JVhDUlM=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>RTC IRQ 8 Patch (IRQ Conflicts)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>IgABeQA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>IgAAeQA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>TIMR IRQ 0 Patch (IRQ Conflicts)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>IgEAeQA=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
+				<key>Replace</key>
+				<data>IgAAeQA=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
@@ -63,6 +205,8 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
+		<array/>
+		<key>Patch</key>
 		<array/>
 		<key>Quirks</key>
 		<dict>
@@ -108,151 +252,294 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,GfxYTile</key>
-				<data>AQAAAA==</data>
-				<key>AAPL,ig-platform-id</key>
-				<data>BwCbPg==</data>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device-id</key>
-				<data>mz4AAA==</data>
-				<key>device_type</key>
-				<string>VGA Compatible Controller</string>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>enable-hdmi-dividers-fix</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>model</key>
-				<string>Intel UHD Graphics</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x12,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,18,0</string>
 				<key>device_type</key>
 				<string>Signal processing controller</string>
 				<key>model</key>
-				<string>Intel Corporation, Series Chipset Thermal Controller</string>
+				<string>Comet Lake Thermal Subsytem</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,20,0</string>
 				<key>device_type</key>
 				<string>USB controller</string>
 				<key>model</key>
-				<string>Intel Corporation, Series Chipset USB xHCI Host Controller</string>
+				<string>Comet Lake PCH-LP USB 3.1 xHCI Host Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x2)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,20,2</string>
 				<key>device_type</key>
 				<string>RAM memory</string>
 				<key>model</key>
-				<string>Intel Corporation, Series Chipset Shared SRAM</string>
+				<string>Comet Lake PCH-LP Shared SRAM</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x3)</key>
+			<key>PciRoot(0x0)/Pci(0x15,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,21,0</string>
 				<key>device_type</key>
-				<string>Network controller</string>
+				<string>Serial bus controller</string>
 				<key>model</key>
-				<string>Intel Corporation, Series Chipset Wireless-AC 9462</string>
+				<string>Serial IO I2C Host Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,22,0</string>
 				<key>device_type</key>
-				<string>IMEI Controller</string>
+				<string>Communication controller</string>
 				<key>model</key>
-				<string>Intel Corporation, Series Chipset IMEI Controller</string>
+				<string>Comet Lake Management Engine Interface</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,23,0</string>
 				<key>device_type</key>
-				<string>AHCI Controller</string>
+				<string>SATA controller</string>
 				<key>model</key>
-				<string>Intel Corporation, Series Chipset SATA Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>Storage Controller</string>
-				<key>model</key>
-				<string>Intel Corporation, Series Chipset NVME Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1D,0x5)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>SD Host controller</string>
-				<key>model</key>
-				<string>Intel Corporation, Series Chipset SD Host Controller</string>
+				<string>Comet Lake SATA AHCI Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,31,3</string>
 				<key>device_type</key>
 				<string>Audio device</string>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
 				<key>layout-id</key>
-				<integer>28</integer>
+				<data>FQAAAA==</data>
 				<key>model</key>
-				<string>Realtek High Definition Audio Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>Serial Bus Controller</string>
-				<key>model</key>
-				<string>Intel Corporation, Series Chipset SMBus Controller</string>
+				<string>Realtek ALC256/ALC3246</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x5)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,31,5</string>
 				<key>device_type</key>
-				<string>Serial Bus Controller</string>
+				<string>Serial bus controller</string>
 				<key>model</key>
-				<string>Intel Corporation, Series Chipset SPI Controller</string>
+				<string>Comet Lake SPI (flash) Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x6)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,31,6</string>
 				<key>device_type</key>
 				<string>Ethernet controller</string>
 				<key>model</key>
-				<string>Intel Corporation, Series Chipset Ethernet I219-V</string>
+				<string>Ethernet Connection (10) I219-V</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>#AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
+				<key>#framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>#framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+				<key>AAPL,ig-platform-id</key>
+				<data>AACbPg==</data>
+				<key>device-id</key>
+				<data>mz4AAA==</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>dpcd-max-link-rate</key>
+				<data>FAAAAA==</data>
+				<key>enable-dpcd-max-link-rate-fix</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>enable-lspcon-support</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>AQUJAAAEAACHAQAA</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-alldata</key>
+				<data>AgYJAAAEAACHAQAA</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con3-alldata</key>
+				<data>AwQKAAAIAACHAQAA</data>
+				<key>framebuffer-con3-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con3-has-lspcon</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con3-preferred-lspcon-mode</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-portcount</key>
+				<data>BAAAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>igfxfw</key>
+				<data>AgAAAA==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics 630</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x8,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built In</string>
+				<string>Internal@0,8,0</string>
 				<key>device_type</key>
-				<string>Gaussian Mixture</string>
+				<string>System peripheral</string>
 				<key>model</key>
-				<string>Intel Corporation, Series Chipset Gaussian Mixture Model</string>
+				<string>Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th/8th Gen Core Processor Gaussian Mixture Model</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,0,0</string>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>8th Gen Core Proessor Host Bridge/DRAM Registers</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,20,3</string>
+				<key>device_type</key>
+				<string>Network controller</string>
+				<key>model</key>
+				<string>Wireless-AC 9462</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x15,0x2)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,21,2</string>
+				<key>device_type</key>
+				<string>Serial Bus Controller</string>
+				<key>model</key>
+				<string>Comet Lake PCH-LP LPSS: I2C Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Cannon Lake PCH PCI Espress Root Port #1</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0/0,0</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0/0,0/0,0</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0/0,0/0,0/0,0</string>
+				<key>device_type</key>
+				<string>System peripheral</string>
+				<key>model</key>
+				<string>JHL7540 Thunderbolt 3 NHI [Titan Ridge 2C 2018]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0/0,0/1,0</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0/0,0/2,0</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>JHL7540 Thunderbolt 3 Bridge [Titan Ridge 2C 2018]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0/0,0/2,0/0,0</string>
+				<key>device_type</key>
+				<string>USB controller</string>
+				<key>model</key>
+				<string>JHL7540 Thunderbolt 3 USB Controller [Titan Ridge 2C 2018]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1D,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,29,0</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Comet Lake PCI Express Root Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,29,0/0,0</string>
+				<key>device_type</key>
+				<string>Non-Volatile memory controller</string>
+				<key>model</key>
+				<string>SA2000M8/250G NVMe PCIe SSD</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1D,0x5)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,29,5</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Genesys Logic CardReader</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1D,0x5)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>SDXC</string>
+				<key>Built-in</key>
+				<data>AQAAAA==</data>
+				<key>compatible</key>
+				<string>pci14e4,16bc</string>
+				<key>device_type</key>
+				<string>Media Controller</string>
+				<key>model</key>
+				<string>SD Card Reader</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,0</string>
+				<key>device_type</key>
+				<string>ISA bridge</string>
+				<key>model</key>
+				<string>Comet Lake PCI Express Root Port 13</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,4</string>
+				<key>device_type</key>
+				<string>SMBus</string>
+				<key>model</key>
+				<string>Cannon Lake PCH SMBus Controller</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -273,6 +560,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoodooHDA.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooHDA</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -338,24 +643,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>IOElectrify.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IOElectrify</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>IntelMausi.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -363,60 +650,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelMausi</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>AirportItlwm.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportItlwm</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>IntelBluetoothFirmware.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IntelBluetoothFirmware</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>IntelBluetoothInjector.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -464,13 +697,13 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>USBInjectAll.kext</string>
+				<string>USBPorts.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBInjectAll</string>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -482,13 +715,49 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>NVMeFix.kext</string>
+				<string>IntelBluetoothFirmware.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/NVMeFix</string>
+				<string>Contents/MacOS/IntelBluetoothFirmware</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IntelBluetoothInjector.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AirportItlwm.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportItlwm</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -502,9 +771,9 @@
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
-			<data></data>
+			<data>7AYIAAAAAAAAAAAAAAAAAA==</data>
 			<key>Cpuid1Mask</key>
-			<data></data>
+			<data>/////wAAAAAAAAAAAAAAAA==</data>
 			<key>DummyPowerManagement</key>
 			<false/>
 			<key>MaxKernel</key>
@@ -513,7 +782,28 @@
 			<string></string>
 		</dict>
 		<key>Force</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>System/Library/Extensions/IONetworkingFamily.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IONetworkingFamily</string>
+				<key>Identifier</key>
+				<string>com.apple.iokit.IONetworkingFamily</string>
+				<key>MaxKernel</key>
+				<string>13.99.99</string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+		</array>
 		<key>Patch</key>
 		<array/>
 		<key>Quirks</key>
@@ -521,7 +811,7 @@
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -550,6 +840,8 @@
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
+			<key>SetApfsTrimTimeout</key>
+			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
@@ -577,12 +869,18 @@
 			<string>None</string>
 			<key>HideAuxiliary</key>
 			<true/>
+			<key>LauncherOption</key>
+			<string>Full</string>
+			<key>LauncherPath</key>
+			<string>Default</string>
 			<key>PickerAttributes</key>
-			<integer>1</integer>
+			<integer>17</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
+			<key>PickerVariant</key>
+			<string>Default</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -609,10 +907,27 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<false/>
+				<key>Comment</key>
+				<string>Not signed for security reasons</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Name</key>
+				<string>CustomOS</string>
+				<key>Path</key>
+				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+		</array>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
@@ -624,9 +939,7 @@
 			<key>AuthRestart</key>
 			<false/>
 			<key>BlacklistAppleUpdate</key>
-			<false/>
-			<key>BootProtect</key>
-			<string>Bootstrap</string>
+			<true/>
 			<key>DmgLoading</key>
 			<string>Signed</string>
 			<key>EnablePassword</key>
@@ -639,10 +952,10 @@
 			<data></data>
 			<key>PasswordSalt</key>
 			<data></data>
-			<key>SecureBootModel</key>
-			<string>Disabled</string>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
+			<key>SecureBootModel</key>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -654,31 +967,13 @@
 				<key>Auxiliary</key>
 				<true/>
 				<key>Comment</key>
-				<string>CFGLock.efi</string>
+				<string>OpenShell.efi</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Name</key>
-				<string>CFGLock Shell</string>
+				<string>OpenShell.efi</string>
 				<key>Path</key>
-				<string>CFGLock.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Comment</key>
-				<string>OpenControl.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Name</key>
-				<string>OpenControl.efi</string>
-				<key>Path</key>
-				<string>OpenControl.efi</string>
+				<string>OpenShell.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -707,13 +1002,13 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v igfxonln=1</string>
+				<string></string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
-				<data>ZW4tVVM6MA==</data>
+				<string>it:4</string>
 				<key>run-efi-updater</key>
-				<integer>0</integer>
+				<string>No</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -726,6 +1021,7 @@
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<array>
 				<string>rtc-blacklist</string>
+				<string>opencore-version</string>
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
@@ -737,7 +1033,31 @@
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
-		<dict/>
+		<dict>
+			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+			<array>
+				<string>EFILoginHiDPI</string>
+				<string>EFIBluetoothDelay</string>
+				<string>LocationServicesEnabled</string>
+				<string>SystemAudioVolume</string>
+				<string>SystemAudioVolumeDB</string>
+				<string>SystemAudioVolumeSaved</string>
+				<string>bluetoothActiveControllerInfo</string>
+				<string>bluetoothInternalControllerInfo</string>
+				<string>flagstate</string>
+				<string>fmm-computer-name</string>
+				<string>nvda_drv</string>
+				<string>prev-lang:kbd</string>
+			</array>
+			<key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
+			<array>
+				<string>Boot0080</string>
+				<string>Boot0081</string>
+				<string>Boot0082</string>
+				<string>BootNext</string>
+				<string>BootOrder</string>
+			</array>
+		</dict>
 		<key>WriteFlash</key>
 		<true/>
 	</dict>
@@ -751,22 +1071,24 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
+			<key>MaxBIOSVersion</key>
+			<false/>
 			<key>MLB</key>
-			<string>C07815108QXKXPGJA</string>
+			<string></string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
-			<key>SystemMemoryStatus</key>
-			<string>Upgradable</string>
 			<key>ROM</key>
-			<data>LtMSARjL</data>
+			<data></data>
 			<key>SpoofVendor</key>
-			<false/>
+			<true/>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>SystemProductName</key>
 			<string>Macmini8,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C07WK03LJYVX</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>84CF9016-DDE0-4E75-8A1F-3450EE0118CB</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -776,6 +1098,8 @@
 		<true/>
 		<key>UpdateSMBIOSMode</key>
 		<string>Create</string>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -799,15 +1123,19 @@
 			<key>AudioCodec</key>
 			<integer>0</integer>
 			<key>AudioDevice</key>
-			<string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
+			<string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
 			<key>AudioOut</key>
 			<integer>0</integer>
 			<key>AudioSupport</key>
 			<true/>
 			<key>MinimumVolume</key>
-			<integer>60</integer>
+			<integer>50</integer>
 			<key>PlayChime</key>
-			<true/>
+			<string>Auto</string>
+			<key>ResetTrafficClass</key>
+			<false/>
+			<key>SetupDelay</key>
+			<integer>0</integer>
 			<key>VolumeAmplifier</key>
 			<integer>143</integer>
 		</dict>
@@ -815,10 +1143,9 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>HfsPlus.efi</string>
-			<string>AudioDxe.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>OpenCanopy.efi</string>
+			<string>HfsPlus.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -826,8 +1153,6 @@
 			<false/>
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
-			<key>KeyMergeThreshold</key>
-			<integer>2</integer>
 			<key>KeySupport</key>
 			<true/>
 			<key>KeySupportMode</key>
@@ -851,6 +1176,8 @@
 			<false/>
 			<key>ForceResolution</key>
 			<false/>
+			<key>GopPassThrough</key>
+			<false/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
@@ -862,7 +1189,7 @@
 			<key>Resolution</key>
 			<string>Max</string>
 			<key>SanitiseClearScreen</key>
-			<true/>
+			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 			<key>UgaPassThrough</key>
@@ -909,8 +1236,10 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<true/>
+			<key>ActivateHpetSupport</key>
+			<false/>
+			<key>DisableSecurityPolicy</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
