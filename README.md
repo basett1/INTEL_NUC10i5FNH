@@ -15,6 +15,8 @@
 
 # INTEL NUC10i5FNH Hackintosh
 
+![modello](./Infos/pc.png)
+
 EFI for Intel NUC10i5FNH with OpenCore bootloader
 
 ![descrizione](./Infos/infomac.png)
