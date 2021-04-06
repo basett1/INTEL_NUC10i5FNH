@@ -34,8 +34,6 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 | SmBios           | MacMini 8,1                        |
 | BootLoader       | OpenCore                           |
 
-![infobigsur](./Screenshot/infomac.png)
-
 ## Peripherals & Benchmarks
 
 ![infohack](./Infos/peripherals.png)
@@ -47,7 +45,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 
 - [x] Intel UHD iGPU HDMI Output / USB C Output Video
 - [x] ALC256 Native Combojack headphones
-- [x] ALC256 HDMI Audio Output (*note)
+- [x] ALC256 HDMI Audio Output
 - [x] All USB Ports
 - [x] SpeedStep / Sleep / Wake
 - [x] Wi-Fi and Bluetooth
@@ -56,6 +54,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 - [x] NVRAM
 - [x] ALC256 Combojack microphone
 - [x] ALC256 jack LINE-IN
+- [x] SD card reader 
 
 ## CFG Unlock 
 
@@ -111,10 +110,29 @@ If everything went well, we will have this screen with a red popup
 
 ![CPUSetupeMODSAVERU](./CFGunlock/valoremodsave.jpg)
 
-Ejoy
+## BIOS config
 
-# BIOS
-## WIP
+To start, choose "Load Defaults" (choose from the menu or press F2 in the BIOS setup).
+
+BIOS version FNCML357.0050 (latest)
+
+* ## Advanced
+* ATA Mode Selection -> AHCI
+* ## Video
+* IGD Minimum Memory -> 64MB
+* IGD Aperture Size -> 256MB
+* IGD Primary Video Port -> Auto
+* ## Boot
+* Secure Boot -> Disabled
+* UEFI Boot -> Checked
+* Legacy Boot -> Unchecked
+* Fast Boot -> Unchecked
+* ## Power
+* Secondary Power Settings
+* Deep S4/S5 -> Off
+* Wake on Lan from S4/S5 -> Stay Off
+* Wake System from S5 -> Off
+* Wake From Thunderbolt Device -> Off
 
 ### Special Config:
 
