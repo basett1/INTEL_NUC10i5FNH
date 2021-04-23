@@ -10,7 +10,7 @@
 
 </div>
 
-# 6 APRIL 2021 ADDED NEW EFI. I'LL UPDATE THE REPO WITH THE NEW INFOS IN FEW DAYS
+# 23 APRIL 2021 ADDED NEW EFI. I'LL UPDATE THE REPO WITH THE NEW INFOS IN FEW DAYS
 
 
 # INTEL NUC10i5FNH Hackintosh
@@ -121,7 +121,7 @@ BIOS version FNCML357.0050 (latest)
 * ## Advanced
 * ATA Mode Selection -> AHCI
 * ## Video
-* IGD Minimum Memory -> 64MB
+* IGD Minimum Memory -> 128MB
 * IGD Aperture Size -> 256MB
 * IGD Primary Video Port -> Auto
 * ## Boot
@@ -146,7 +146,6 @@ See [ioreg](./MacMini.ioreg) for more clarification
 - [Apple](https://apple.com) for macOS;
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
 - [Dortania](https://github.com/dortania)
-- [VoodooHDA](https://sourceforge.net/p/voodoohda/code/HEAD/tree)
 - [Hackintoshlifeit](https://github.com/Hackintoshlifeit)
 - [PIERPAOLO](https://github.com/pierpaolodimarzo) for his desire to learn and the great commitment he has put into this project
 
