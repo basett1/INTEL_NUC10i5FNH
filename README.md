@@ -30,7 +30,7 @@ EFI for Intel NUC10i5FNH with OpenCore bootloader
 | Lan              | Intel I219V10                      |
 | Audio            | Realtek ALC256                     |
 | Ram              | 32 Gb DDR4 2666 Mhz                |
-| Wifi + Bluetooth | INTEL Wi-Fi 6 AX201                |
+| Wifi + Bluetooth | INTEL Wi-Fi AC9462                 |
 | NVMe             | SAMSUNG 970 EVO PLUS 250 GB (MACOS)|
 | SSD              | SAMSUNG 860 EVO 1TB (WINDOWS)      |
 | SmBios           | MacMini 8,1                        |
